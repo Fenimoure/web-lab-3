@@ -1,5 +1,5 @@
 function tostart() {
-    window.location.href="#start";
+    document.getElementById('article').scrollTo(0, 0);
 }
 
 function biography() {
@@ -34,7 +34,7 @@ function biography() {
 }
 
 function subj_info() {
-    document.getElementById('article').innerHTML = '<h1 id="start">Проектування та розробка веб-застосунків — дуже класна дисципліна, мені подобається.</h1>' +
+    document.getElementById('article').innerHTML = '<h1 id="start1">Проектування та розробка веб-застосунків — дуже класна дисципліна, мені подобається.</h1>' +
         '<h2>Мета</h2>' +
         '<p>Мета дисципліни – забезпечити формування у студентів теоретичних знань та' +
         'практичних навичок проектування та розробки власних Web - застосувань з використанням' +
