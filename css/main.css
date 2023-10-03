@@ -1,0 +1,27 @@
+:root {
+    --inactive-link-color: #4b4b4b;
+    --inactive-article-link-color: #581919ff;
+    --accent-color: #BF0000FF;
+}
+
+html{
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    font-family: Montserrat, sans-serif;
+    font-size: 20px;
+    max-height: 100%;
+    background-color: #fcfcfc;
+}
+
+a {
+    text-decoration: none;
+    color: var(--inactive-link-color);
+    transition: color 0.4s;
+}
+
+a:hover {
+    color: var(--accent-color);
+}
