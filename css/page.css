@@ -79,6 +79,10 @@ article {
     /*background-position: center;*/
 }
 
+article::-webkit-scrollbar{
+    display: none;
+}
+
 article img {
     border-radius: 6px;
 }
