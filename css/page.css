@@ -32,11 +32,11 @@ nav {
 }
 
 .logo-container {
-    margin-top: 0.3%;
-    margin-bottom: 0.2%;
-    flex-direction: column;
-    text-align: center;
-    width: 6%;
+    display: flex;
+    align-items: center;
+    flex-direction: initial;
+    justify-content: center;
+    width: 4%;
 }
 
 .nav-name {
@@ -71,7 +71,6 @@ article, aside, footer {
 }
 
 article {
-    max-width: 60%;
     background-image: url("img/web-icon.jpg");
     background-repeat: no-repeat;
     overflow: scroll;
@@ -139,7 +138,8 @@ footer button:hover {
 }
 
 .side-panel {
-    width: 50%;
+    min-width: 25%;
+    max-width: 30%;
     display: flex;
     flex-direction: column;
     flex: 1;
