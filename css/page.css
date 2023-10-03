@@ -1,5 +1,8 @@
 :root {
     --shadow-color: rgba(0, 0, 0, 0.15);
+    --nav-bg-color: white;
+    --nav-text-color: black;
+    --nav-link-inactive: rgba(225, 225, 225, 0.63);
 }
 
 nav {
@@ -8,12 +11,12 @@ nav {
     display: flex;
     align-items: stretch;
     justify-items: center;
-    height: 56px;
-    width: auto;
+    height: 70px;
     font-weight: 600;
     z-index: 100;
-    background-color: white;
-    margin: 0 8px;
+    color: var(--nav-text-color);
+    background-color: var(--nav-bg-color);
+    box-shadow: 0 0 4px var(--shadow-color);
 }
 
 .box {
@@ -52,6 +55,8 @@ nav {
 main {
     z-index: -1;
     margin-top: 10px;
+    margin-right:160px ;
+    margin-left: 160px;
     display: flex;
     height: 90vh;
     flex-grow: 1;
@@ -59,7 +64,7 @@ main {
 }
 
 article, aside, footer {
-    padding: 20px;
+    padding: 25px;
     margin: 8px;
     flex-grow: 1;
     background-color: white;
@@ -70,6 +75,8 @@ article {
     background-image: url("img/web-icon.jpg");
     background-repeat: no-repeat;
     overflow: scroll;
+    scrollbar-width: none;
+    padding: 40px;
     /*background-blend-mode: overlay;*/
     /*background-position: center;*/
 }
@@ -78,9 +85,11 @@ article img {
     border-radius: 6px;
 }
 
-article p {
+article p,
+article li {
     line-height: 1.5;
     text-align: justify;
+    margin-bottom: 0.5em;
 }
 
 article a, footer a {
@@ -101,19 +110,35 @@ aside img {
     transition: opacity 0.5s;
 }
 
-aside img:hover {
+aside:hover img {
     opacity: 100%;
+}
+
+footer button {
+    padding: 8px 25px;
+    font-size: 20px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 60px;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+
+footer button:hover {
+    background-color: #e7e7e7;
+}
+
+.start-point {
+    display: inline-block;
 }
 
 .img-left {
     float: left;
     margin-right: 20px;
-    margin-bottom: 20px;
+    margin-bottom: auto;
 }
 
 .side-panel {
-    position: sticky;
-    top: 0;
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -124,4 +149,8 @@ aside img:hover {
 
 .side-panel:hover {
     opacity: 100%;
+}
+
+#start {
+    margin-top: 0;
 }
