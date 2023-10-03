@@ -22,6 +22,7 @@ a {
     text-decoration: none;
     color: var(--inactive-link-color);
     transition: color 0.4s;
+    cursor: pointer;
 }
 
 a:hover {
